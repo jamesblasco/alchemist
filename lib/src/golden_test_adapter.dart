@@ -369,7 +369,7 @@ class FlutterGoldenTestWrapper extends StatelessWidget {
       resolvedTheme = resolvedTheme.applyObscuredFontFamily();
     }
 
-    return resolvedTheme.stripTextPackages();
+    return resolvedTheme;
   }
 
   @override
