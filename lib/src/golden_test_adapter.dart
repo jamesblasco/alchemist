@@ -250,9 +250,8 @@ class FlutterGoldenTestAdapter extends GoldenTestAdapter {
                       maxWidth: constraints.maxWidth,
                       maxHeight: constraints.maxHeight,
                       child: Center(
-                        child: Padding(
+                        child: KeyedSubtree(
                           key: childKey,
-                          padding: const EdgeInsets.all(8),
                           child: widget,
                         ),
                       ),
